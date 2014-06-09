@@ -2,7 +2,6 @@ source 'https://rubygems.org'
 
 
 gem 'rails', '4.1.1'
-gem 'sqlite3'
 gem 'sass-rails', '~> 4.0.3'
 gem 'sass', '3.2.19'
 gem 'bourbon'
@@ -18,6 +17,10 @@ gem 'spring',        group: :development
 
 group :development, :test do
 	gem 'rspec-rails', '~> 2.0'
+	gem 'sqlite3'
+end
+group :production do
+	gem 'pg'
 end
 
 group :test do
